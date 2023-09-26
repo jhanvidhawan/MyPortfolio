@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(8, 2, 36);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      /* justify-content: space-around; */
+      background-color: rgb(1, 1, 15);
+      height: 70px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    li a:hover {
+      color: rgb(176, 123, 225);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .first {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    .leftSection {
+      font-size: 40px;
+      font-family: 'Tangerine', cursive;
+    }
+
+    .rightSection img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      filter: drop-shadow(23px 7px 4px rgb(74, 73, 73));
+    }
+
+    .jhanvi {
+      color: rgb(176, 123, 225);
+    }
+
+    .second {
+      background-image: url(download20.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 60px 0;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0px 20px 30px rgb(79, 0, 79);
+    }
+
+    .image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 3px solid rgb(176, 123, 225);
+      margin-right: 30px;
+    }
+
+    button {
+      background-color: rgb(192, 156, 226);
+      color: black;
+      height: 50px;
+      width: 100%;
+      max-width: 340px;
+      font-size: 20px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #dd9ff6;
+      transition: background-color 0.5s, transform 0.5s;
+      transform: scale(1.05);
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 20px -10px;
+    }
+
+    .flex-container>div {
+      width: calc(33.33% - 20px);
+      padding: 10px;
+      background-color: rgb(208, 166, 248);
+      border-radius: 5px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: rgb(1, 1, 15);
+      color: rgb(198, 196, 196);
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .footer ul {
+      text-align: center;
+    }
+
+    .fa {
+      padding: 9px;
+      font-size: 20px;
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 5px;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      /* background: #3B5998; */
+      color: white;
+      height: 20%;
+      width: 2.8%;
+    }
+
+    .fa-twitter {
+      /* background: #55ACEE; */
+      color: white;
+      height: 20%;
+      width: 2.8%;
+    }
+
+    .fa-youtube {
+      /* background: #bb0000; */
+      color: white;
+      height: 20%;
+      width: 2.8%;
+    }
+
+    .fa-instagram {
+      /* background: linear-gradient(rgb(138, 0, 193), rgb(255, 0, 102), yellow); */
+      color: white;
+      height: 20%;
+      width: 2.8%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </div>
+
+  <main>
+    <section class="first">
+      <div class="leftSection">
+        <b>I am <span class="jhanvi">Jhanvi</span>.</b>
+        <div>and I am a <span class="jhanvi">Computer Science Engineering</span> Student at Chitkara University.</div>
+      </div>
+      <div class="rightSection">
+        <img src="download18.webp">
+      </div>
+    </section>
+
+    <section class="second">
+      <div>
+        <img class="image" src="myphoto.jpeg">
+      </div>
+      <div>
+        <button class="button" onclick="typeWriter()"><b>Click, to know more about me</b></button>
+        <h1 style="font-size: 30px; color: rgb(176, 123, 225);" id="demo"></h1>
+        <span id="element"></span>
+      </div>
+    </section>
+  </main>
+
+  <div class="container">
+    <div class="flex-container">
+      <div>
+        <b>Education:</b>
+        <p>Schooling: Spring Dale Senior School, Punjab.</p>
+        <p>Currently pursuing Computer Science Engineering from Chitkara University, Punjab.</p>
+      </div>
+      <div>
+        <b>Skills:</b>
+        <p>Web Development: HTML, CSS, JavaScript</p>
+        <p>Proficient in Linux operating system.</p>
+        <p>Database Management System.</p>
+      </div>
+      <div>
+        <b>Other Interests and Hobbies:</b>
+        <p>Skilled in drawing and painting.</p>
+        <p>Passionate about reading books.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <!-- <div class="footerfirst">
+        <ul>
+          <li>Home</li>
+          <li>About Me</li>
+          <li>Career</li>
+          <li>Learnings</li>
+        </ul>
+      </div> -->
+      <div class="footerthird">
+        <p>Contact Me</p>
+        <p>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </p>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p>jhanvi0695.be21@chitkara.edu.in</p>
+      </div>
+    </div>
+    <div style="color: grey; text-align: center; font-size: 13px; font-family: 'Poppins', sans-serif;">All rights
+      reserved
+      (jhanvi0695.be21@chitkara.edu.in)</div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var i = 0;
+    var txt = 'Good hand in Front end Web Development, Languages Known: C, C++, Java';
+    var speed = 70;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+      }
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  </script>
+</body>
+
+</html>
